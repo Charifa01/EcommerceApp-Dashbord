@@ -2,9 +2,16 @@
 
 namespace App\Repositories;
 use App\Models\Product;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 class ProductRepository
 {
+    public function paginate(array $params): LengthAwarePaginator
+    {
+        $query = Product::orderBy('created_at', 'desc');
+    
+        return $query->paginate($params['per_page'] ?? 10);
+    }
     public function getAllProducts()
     {
         return Product::all();

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title', 45)->nullable();
             $table->string('description', 225)->nullable();
             $table->string('slug', 200)->nullable();;
-            $table->integer('quantity')->default(1);
+            $table->integer('quantity')->default(1); // the quantity of the product in the stock
             $table->decimal('price',8,2);
             $table->boolean('published')->default(0);
             $table->boolean('inStock')->default(0);

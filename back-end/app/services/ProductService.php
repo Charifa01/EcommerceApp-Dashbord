@@ -1,7 +1,10 @@
 <?php 
 
 namespace App\Services;
+
+use App\Models\Product;
 use App\Repositories\ProductRepository;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 class ProductService{
     protected $productRepository;
@@ -9,6 +12,10 @@ class ProductService{
     public function __construct(ProductRepository $productRepository)
     {
         $this->productRepository = $productRepository;
+    }
+    public function paginate(array $params): LengthAwarePaginator
+    {
+        return $this->productRepository->paginate($params);
     }
     public function getAllProducts()
     {
