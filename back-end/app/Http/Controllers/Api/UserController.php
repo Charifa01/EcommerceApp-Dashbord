@@ -31,7 +31,6 @@ class UserController extends Controller
         $data = $request->all();
         $this->userService->createUser($data);
         return response()->json(['message' => 'User created successfully'], 201);
-       
     }
     public function getAllCostumers()
     {
