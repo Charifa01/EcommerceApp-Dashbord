@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\OrderController;
-
+use App\Http\Controllers\Api\CategoryController;
 
 // Route::namespace('Api')->group(function () {
     Route::post('/login',[AuthController::class,'login']);
@@ -19,5 +19,8 @@ use App\Http\Controllers\Api\OrderController;
     // order Routes
     Route::apiResource('order', OrderController::class);
     Route::get('/allOrders',[OrderController::class , 'getAllOrders']);
+    // Category Routes
+    Route::apiResource('category', CategoryController::class);
+    Route::get('/allCategories',[CategoryController::class , 'getAllCategories']);
 // });
 
