@@ -1,12 +1,11 @@
-<script setup lang="ts">
-
+<script setup lang="js">
+//import dashboard from '@/views/dashboard/dashboard.vue';
+import Dashborad from "./views/dashboard/dashborad.vue";
 </script>
 
 <template>
  
- <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+ <Dashborad />
   
 </template>
 
