@@ -6,12 +6,11 @@ import {CubeIcon }from '@heroicons/vue/24/outline';
 import {TagIcon }from '@heroicons/vue/24/outline';
 import {UserCircleIcon} from '@heroicons/vue/24/outline';
 import {UserGroupIcon} from '@heroicons/vue/24/outline';
-
 //bg-[url(/img/line-pattern.svg)]
 const menu = ref([
     { name: "Home", icon : HomeIcon },
-    { name: "Orders", icon : ClipboardIcon  },
     { name: "Products", icon : CubeIcon   },
+    { name: "Orders", icon : ClipboardIcon  },
     { name: "Categories",icon : TagIcon },
     { name: "Custumers", icon : UserCircleIcon },
     { name: "Profile", icon : UserGroupIcon   },

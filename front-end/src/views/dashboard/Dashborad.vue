@@ -1,8 +1,7 @@
-<script setup lang="js">
-//import Sidebar from '@/components/layout/Sidebar.vue';
-// import Sidebar from '@/layout/Sidebar.vue';
+<script setup >
 import Sidebar from '../../components/layout /Sidebar.vue';
 import navbar from '../../components/layout /navbar.vue';
+import Product from '../Product/Product.vue';
 
 </script>
 
@@ -11,6 +10,7 @@ import navbar from '../../components/layout /navbar.vue';
         <Sidebar />
         <main class="flex w-5/6 min-h-screen flex-1 flex-col rounded-l-[48px] " >
             <navbar />
+            <Product />
         </main>
     </div>
     
